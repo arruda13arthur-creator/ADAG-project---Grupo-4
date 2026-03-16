@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu novo site</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1>Bem-vindo ao meu nov site sobre conteudo de programação </h1>
+    
+    <p>Este é um exemplo de site criado para compartilhar conteudo relacionado à programação. aqui você encontrará tutoriais, dicas e recursos para aprender a programar em diversas linguagem</p>
+
+    <h2>Recursos para aprender a programar</h2>
+        <p>confira alguns recursos úteis para começar sua jornada na programação</p>
+        <h3>HTML</h3>
+            <p>HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto). É a linguagem padrão fundamental utilizada para estruturar e criar páginas web. Não é uma linguagem de programação, mas sim uma linguagem de marcação que diz ao navegador como exibir textos, imagens e outros conteúdos.</p>
+            <img src="./imagem/1175208.webp" alt="Logo HTML" width="100">
+        <h3>CSS</h3>
+            <p>CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem de estilo utilizada para definir a apresentação (aparência e visual) de documentos estruturados, como HTML ou XML. Enquanto o HTML cuida da estrutura e do conteúdo de uma página web, o CSS é responsável por tornar essa página visualmente atraente e organizada.</p>
+            <img src="./imagem/free-css3-3d-icon-png-download-3640300.webp" alt="Logo Css" width="100">
+        <h3>JavaScript</h3>
+            <p>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação de alto nível, interpretada e voltada para objetos, amplamente utilizada para tornar páginas da web interativas e dinâmicas</p>
+            <img src="./imagem/images.png" alt="Logo JavaScript"width="100">
+    
+    
+
+    
+</body>
+</html>
