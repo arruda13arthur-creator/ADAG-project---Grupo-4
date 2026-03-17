@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #497231;
+}
+
+h1{
+
+    color: #ebfc08ef;
+    font-size: 30px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+
+
+}
+
+
+header{
+
+    background-color: #e0b802;
+    padding: 10px;
+    text-align: center;
+
+}
+nav{
+
+    padding: 10px;
+    text-align: center;
+    
+
+}
+nav a{
+
+    color: #e0b802;
+
+}
+
+nav a:hover{
+
+    color: #6bc4ff;
+
+}
+
+
+footer{
+
+    background-color: #e0b802;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffed9b;
+
+}
