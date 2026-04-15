@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+--cor-principal:#437FFF;
+--cor-secundaria:#FED731;
+--cor-fundo:#E6E6E6;
+--fonte-principal: 'doppio one';
+--cor-fonte-secundaria :#FFE100;
+
+}
+
 *{
     margin: 0;
     padding: 0;
