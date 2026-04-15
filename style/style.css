@@ -9,14 +9,21 @@
 --cor-fonte-secundaria:#051D6C;
 --cor-fonte-tercearia :#FFE100;
 
-
-
 }
 
 *{
     margin: 0;
     padding: 0;
 }
+
+.body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-primaria);
+}
+
+
+
 .pagina__principal{
     background-image: url(../imagens/barra\ de\ pesquisa+fundo_principal.png);
     background-repeat: no-repeat;
