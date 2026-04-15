@@ -4,3 +4,16 @@
     margin: 0;
     padding: 0;
 }
+.pagina__principal{
+    background-image: url(../imagens/barra\ de\ pesquisa+fundo_principal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center
+
+}
+.texto{
+    width: 20em;
+    margin: auto;
+
+}
