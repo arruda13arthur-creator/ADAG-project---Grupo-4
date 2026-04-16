@@ -16,23 +16,24 @@
     padding: 0;
 }
 
-.body{
+body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
     color: var(--cor-fonte-primaria);
 }
 .barra__superior{
     background-color: var(--cor-principal);
-    width: auto;   /* largura */
-    height:auto;  /* altura */
+    width: auto;/*largura*/
+    height: auto;/*altura*/
 }
 .logo__adag{
     width: 6em;
     height: auto;
-    margin: 0.5em 0 0.5em 1em;
+    margin: 0 1em 0 2em;
+
 }
 .barra__pesquisa{
     width: 35em;
     height: auto;
-    margin: 1em 0 1em 10em;
+    margin: 0 0 0.5em 10em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
 }
