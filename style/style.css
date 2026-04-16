@@ -34,12 +34,8 @@ body{
     width: 7em;
     height: auto;
     margin: 0 1em 0 3em;
-}
-.barra__pesquisa{
-    position: relative;
-    width: 35em;
-    height: auto;
-    margin: 0.5em 0 0.5em 15em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
+
+
 }
 .cabecalho{
     display: flex; /*exibe os itens em linha*/
@@ -63,4 +59,36 @@ body{
     background-size: contain;
     align-items: center;
     text-align: center;
+}
+.texto__barra__pesquisa{
+    margin-left: 15em;
+    outline: none;
+    background-color: var(--cinza-principal);
+    border-radius: 20px;
+    width: 45em;
+    height: 2.5em;
+    color: var(--cor-fonte-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: var(--font-size-principal);
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}
+.botao{
+    background-color: var(--cor-fonte-tercearia);
+    font-family: var(--fonte-principal);
+    font-size: var(--font-size-principal);
+    border-radius: 7px;
+    margin-left: 1em;
+    margin-top: -1.5em;
+    width: 7em;
+    text-decoration: none;
+}
+.botao__cadastro{
+    margin-left: 20em;
+    padding-left: 1em;
+}
+.botao__login{
+    padding-left: 1em;
+    width: 4em;
 }
