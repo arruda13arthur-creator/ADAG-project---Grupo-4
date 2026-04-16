@@ -30,10 +30,13 @@ body{
     width: 6em;
     height: auto;
     margin: 0 1em 0 2em;
-
 }
 .barra__pesquisa{
     width: 35em;
     height: auto;
-    margin: 0 0 0.5em 10em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
+    margin: 0.5em 0 0.5em 10em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
+}
+.cabecalho{
+    display: flex; /*exibe os itens em linha*/
+    align-items: center;/*alinha os itens verticalmente ao centro*/
 }
