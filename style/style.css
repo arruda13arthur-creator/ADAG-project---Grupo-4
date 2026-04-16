@@ -20,6 +20,11 @@ body{
     font-family: var(--fonte-principal);
     color: var(--cor-fonte-primaria);
 }
+.pagina{
+    height: 100vh;/*altura da tela inteira*/
+    display: grid;/*exibe os itens em grade*/
+    grid-template-columns: 50% 50%;/*divide a tela em 2 colunas de 50% cada*/
+}
 .barra__superior{
     background-color: var(--cor-principal);
     width: auto;/*largura*/
@@ -50,4 +55,12 @@ body{
     width: 32em;
     outline: none;/*remove a borda*/
     color: var(--cor-fonte-secundaria);/*cor da fonte*/
+}
+.pagina__principal{
+    background-image: url(../imagens/carrosel_test.png);
+    background-repeat: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
 }
