@@ -21,19 +21,18 @@
     font-family: var(--fonte-principal);
     color: var(--cor-fonte-primaria);
 }
-
-
-
-.pagina__principal{
-    background-image: url(../imagens/barra\ de\ pesquisa+fundo_principal.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center
-
+.barra__superior{
+    background-color: var(--cor-principal);
+    width: auto;   /* largura */
+    height:auto;  /* altura */
 }
-.texto{
-    width: 20em;
-    margin: auto;
-
+.logo__adag{
+    width: 6em;
+    height: auto;
+    margin: 0.5em 0 0.5em 1em;
+}
+.barra__pesquisa{
+    width: 35em;
+    height: auto;
+    margin: 1em 0 1em 10em;
 }
