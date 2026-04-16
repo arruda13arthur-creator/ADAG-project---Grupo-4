@@ -31,15 +31,15 @@ body{
     height: auto;/*altura*/
 }
 .logo__adag{
-    width: 6em;
+    width: 7em;
     height: auto;
-    margin: 0 1em 0 2em;
+    margin: 0 1em 0 3em;
 }
 .barra__pesquisa{
     position: relative;
     width: 35em;
     height: auto;
-    margin: 0.5em 0 0.5em 10em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
+    margin: 0.5em 0 0.5em 15em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
 }
 .cabecalho{
     display: flex; /*exibe os itens em linha*/
@@ -49,7 +49,7 @@ body{
     font-family: var(--fonte-principal);
     font-size: var(--font-size-principal);
     position: absolute;/*coloca ele por cima*/
-    margin-left: 19.5em;
+    margin-left: 26.5em;
     background: none;/*remove o fundo*/
     border: none;/*remove a borda*/
     width: 32em;
