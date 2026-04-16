@@ -5,17 +5,16 @@
 --cor-secundaria:#FED731;
 --cor-fundo:#E6E6E6;
 --fonte-principal: 'doppio one';
+--font-size-principal: 16px;
 --cor-fonte-primaria: #000000;
 --cor-fonte-secundaria:#051D6C;
 --cor-fonte-tercearia :#FFE100;
-
+--cinza-principal: #B3C4D8;
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
@@ -32,6 +31,7 @@ body{
     margin: 0 1em 0 2em;
 }
 .barra__pesquisa{
+    position: relative;
     width: 35em;
     height: auto;
     margin: 0.5em 0 0.5em 10em; /* 0= cima, 0= direita, 0.5em= baixo, 10em= esquerda */
@@ -39,4 +39,15 @@ body{
 .cabecalho{
     display: flex; /*exibe os itens em linha*/
     align-items: center;/*alinha os itens verticalmente ao centro*/
+}
+.pesquisa__texto{
+    font-family: var(--fonte-principal);
+    font-size: var(--font-size-principal);
+    position: absolute;/*coloca ele por cima*/
+    margin-left: 19.5em;
+    background: none;/*remove o fundo*/
+    border: none;/*remove a borda*/
+    width: 32em;
+    outline: none;/*remove a borda*/
+    color: var(--cor-fonte-secundaria);/*cor da fonte*/
 }
