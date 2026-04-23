@@ -123,15 +123,14 @@ body{
 .img__ia {
     height: 25%;
     margin-left: 25em;
-
-
-
+    margin-top: 3em;
 }
 .sobre {
     color: var(--cor-fonte-secundaria);
     font-family: var(--fonte-principal);
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
+    margin-top: 2em;
 }
 .lista__barra__superior{
     display: flex;
