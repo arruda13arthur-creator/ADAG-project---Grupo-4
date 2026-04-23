@@ -95,3 +95,9 @@ body{
 .pagina__tipo__limpeza{
     
 }
+.sobre__adag {
+    text-align: center;
+    color: var(--cor-fonte-tercearia);
+    font-family: var(--fonte-principal);
+    font-size: 120px;
+}
