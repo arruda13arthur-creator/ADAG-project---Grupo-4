@@ -154,9 +154,12 @@ body{
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding-top: 1em;
+    padding-top:  -10em;
      
 }
 .produtos__mais__comprados {
     margin-left: 1em;
+}
+.fundo__tipo__limpeza {
+    padding-top: 3em;
 }
