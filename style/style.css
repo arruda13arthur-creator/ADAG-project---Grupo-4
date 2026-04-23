@@ -114,7 +114,7 @@ body{
 }
 .sobre__adag {
     text-align: center;
-    color: var(--cor-fonte-tercearia);
+    color: var(--cor-fonte-secundaria);
     font-family: var(--fonte-principal);
     font-size: 120px;
     margin-top: 3em;
