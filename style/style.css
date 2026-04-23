@@ -143,3 +143,20 @@ body{
 .icones__superior{
     margin-left: 1em;
 }
+.titulo__mais__comprados {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-primaria);
+    font-size: 40px;
+    padding-left: 3em;
+    padding-top: -5em;
+}
+.lista__mais__comprados{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 1em;
+     
+}
+.produtos__mais__comprados {
+    margin-left: 1em;
+}
