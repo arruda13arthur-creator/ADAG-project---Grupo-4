@@ -112,6 +112,12 @@ body{
     margin-left: 3em;
     margin-top: 1em;
 }
+.sobre__adag {
+    text-align: center;
+    color: var(--cor-fonte-tercearia);
+    font-family: var(--fonte-principal);
+    font-size: 120px;
+}
 .lista__barra__superior{
     display: flex;
     justify-content: center;
