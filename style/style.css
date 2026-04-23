@@ -92,6 +92,23 @@ body{
     padding-left: 1em;
     width: 4em;
 }
-.pagina__tipo__limpeza{
-    
+.lista__limpeza{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 8em;
+    margin-top: 30em;
+    position: absolute;
+}
+.tipo__limpeza{
+    margin-left: 5em;
+}
+.texto__tipo__limpeza{
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-tercearia);
+    font-size: 100px;
+    width: 50em;
+    position: absolute;
+    margin-left: 3em;
+    margin-top: 1em;
 }
