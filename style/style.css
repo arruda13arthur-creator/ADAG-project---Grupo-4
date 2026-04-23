@@ -117,4 +117,19 @@ body{
     color: var(--cor-fonte-tercearia);
     font-family: var(--fonte-principal);
     font-size: 120px;
+    margin-top: 3em;
+}
+
+.img__ia {
+    height: 25%;
+    margin-left: 25em;
+
+
+
+}
+.sobre {
+    color: var(--cor-fonte-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    text-align: center;
 }
