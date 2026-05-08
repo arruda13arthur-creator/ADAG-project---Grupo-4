@@ -155,6 +155,7 @@ body{
     justify-content: center;
     list-style-type: none;
     padding-top:  -10em;
+    align-items: center;
      
 }
 .produtos__mais__comprados {
