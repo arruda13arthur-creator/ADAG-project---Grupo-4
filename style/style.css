@@ -105,7 +105,7 @@ body{
 }
 .texto__tipo__limpeza{
     font-family: var(--fonte-principal);
-    color: var(--cor-fonte-tercearia);
+    color: var(--cor-fonte-secundaria);
     font-size: 100px;
     width: 50em;
     position: absolute;
@@ -160,6 +160,8 @@ body{
 }
 .produtos__mais__comprados {
     margin-left: 1em;
+    width: 5px;
+    
 }
 .fundo__tipo__limpeza {
     padding-top: 3em;
