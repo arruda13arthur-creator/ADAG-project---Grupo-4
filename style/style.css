@@ -11,10 +11,21 @@
 --cor-fonte-tercearia :#FFE100;
 --cinza-principal: #B3C4D8;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte-primaria);
+}
 .cabecalho{
     display: flex;
     align-items: center;
     background-color: var(--cor-principal);
     position: fixed;
-    
+    z-index: 1000;
+    width: 100%;
+    top: 0%;
+    padding: 20px 8%;
 }
