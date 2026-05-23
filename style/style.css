@@ -37,18 +37,18 @@ body{
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0%;
+    top: 2%;
 }
 .pesquisa{
     padding: 10px 12px;
     position: fixed;
-    top: 1%;
-    left: 25%;
+    top: 3%;
+    left: 20%;
     width: 30%;
     border: none;
     border-radius: 20px;
     font-size: 14px;
-    
+    background-color: var(--cinza-principal);    
 }
 .pesquisa:focus{
     outline: none;
@@ -60,6 +60,7 @@ body{
     gap: 20px;
     list-style: none;
     font-size: 14px;
+    margin-left: 100%;
 }
 .listatopo a{
     color: var(--cor-fonte-primaria);
@@ -69,4 +70,50 @@ body{
 }
 .listatopo a:hover{
     color: var(--cor-secundaria);
+}
+.login{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-left: 280px;
+    top: 20%;
+}
+.cadastrese{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-left: 360px;
+    top: 20%;
+}
+.login a:hover{
+    color: var(--cor-fonte-secundaria);
+}
+.cadastrese a:hover{
+    color: var(--cor-fonte-secundaria);
+}
+.login:hover{
+    background-color: var(--cor-secundaria);
+    padding: 7px 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.cadastrese:hover{
+    background-color: var(--cor-secundaria);
+    padding: 7px 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.botoes-superiores{
+    margin-left: 60%;
+}
+.lista-menu{
+    margin-top: 10%;
 }
