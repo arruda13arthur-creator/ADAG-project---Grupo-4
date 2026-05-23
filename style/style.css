@@ -79,7 +79,7 @@ body{
     background-color: var(--cor-secundaria);
     padding: 5px 15px;
     border-radius: 15px;
-    margin-left: 280px;
+    margin-left: 250px;
     top: 20%;
 }
 .cadastrese{
@@ -90,7 +90,7 @@ body{
     background-color: var(--cor-secundaria);
     padding: 5px 15px;
     border-radius: 15px;
-    margin-left: 360px;
+    margin-left: 340px;
     top: 20%;
 }
 .login a:hover{
@@ -110,9 +110,6 @@ body{
     padding: 7px 15px;
     font-weight: 600;
     transition: 0.3s;
-}
-.botoes-superiores{
-    margin-left: 60%;
 }
 .lista-menu{
     margin-top: 10%;
