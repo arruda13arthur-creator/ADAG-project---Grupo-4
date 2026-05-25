@@ -1,164 +1,287 @@
-@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Inter:wght@100..900&display=swap');
 
 :root {
---cor-principal:#437FFF;
---cor-secundaria:#FED731;
---cor-fundo:#E6E6E6;
---fonte-principal: 'doppio one';
---font-size-principal: 16px;
---cor-fonte-primaria: #000000;
---cor-fonte-secundaria:#051D6C;
---cor-fonte-tercearia :#FFE100;
---cinza-principal: #B3C4D8;
+    --cor-principal:#437FFF;
+    --cor-secundaria:#FED731;
+    --cor-fundo:#E6E6E6;
+    --fonte-principal:'Doppio One', sans-serif;
+    --font-size-principal:16px;
+    --cor-fonte-primaria:#000000;
+    --cor-fonte-secundaria:#051D6C;
+    --cor-fonte-tercearia:#FFE100;
+    --cinza-principal:#B3C4D8;
 }
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
 body{
-    background-color: var(--cor-fundo);
-    font-family: var(--fonte-principal);
-    color: var(--cor-fonte-primaria);
+    width:100%;
+    overflow-x:hidden;
 }
+
+body{
+    background-color:var(--cor-fundo);
+    font-family:var(--fonte-principal);
+    color:var(--cor-fonte-primaria);
+}
+
+/* PAGINA */
+
 .pagina{
-    height: 100vh;/*altura da tela inteira*/
-    display: grid;/*exibe os itens em grade*/
-    grid-template-columns: 50% 50%;/*divide a tela em 2 colunas de 50% cada*/
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
 }
+
+/* BARRA SUPERIOR */
+
 .barra__superior{
-    background-color: var(--cor-principal);
-    width: auto;/*largura*/
-    height: auto;/*altura*/
+    background-color:var(--cor-principal);
+    width:100%;
+    padding:1rem 2rem;
 }
-.logo__adag{
-    width: 7em;
-    height: auto;
-    margin: 0 1em 0 3em;
 
-
-}
 .cabecalho{
-    display: flex; /*exibe os itens em linha*/
-    align-items: center;/*alinha os itens verticalmente ao centro*/
-}
-.pesquisa__texto{
-    font-family: var(--fonte-principal);
-    font-size: var(--font-size-principal);
-    position: absolute;/*coloca ele por cima*/
-    margin-left: 26.5em;
-    background: none;/*remove o fundo*/
-    border: none;/*remove a borda*/
-    width: 32em;
-    outline: none;/*remove a borda*/
-    color: var(--cor-fonte-secundaria);/*cor da fonte*/
-}
-.pagina__principal{
-    background-image: url(../imagens/carrosel_test.png);
-    background-repeat: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
-}
-.texto__barra__pesquisa{
-    margin-left: 15em;
-    outline: none;
-    background-color: var(--cinza-principal);
-    border-radius: 20px;
-    width: 45em;
-    height: 2.5em;
-    color: var(--cor-fonte-secundaria);
-    font-family: var(--fonte-principal);
-    font-size: var(--font-size-principal);
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-}
-.botao{
-    background-color: var(--cor-fonte-tercearia);
-    font-family: var(--fonte-principal);
-    font-size: var(--font-size-principal);
-    border-radius: 7px;
-    margin-left: 1em;
-    margin-top: -1.5em;
-    width: 7em;
-    text-decoration: none;
-}
-.botao__cadastro{
-    margin-left: 20em;
-    padding-left: 1em;
-}
-.botao__login{
-    padding-left: 1em;
-    width: 4em;
-}
-.lista__limpeza{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-left: 8em;
-    margin-top: 30em;
-    position: absolute;
-}
-.tipo__limpeza{
-    margin-left: 5em;
-}
-.texto__tipo__limpeza{
-    font-family: var(--fonte-principal);
-    color: var(--cor-fonte-secundaria);
-    font-size: 100px;
-    width: 50em;
-    position: absolute;
-    margin-left: 3em;
-    margin-top: 1em;
-}
-.sobre__adag {
-    text-align: center;
-    color: var(--cor-fonte-secundaria);
-    font-family: var(--fonte-principal);
-    font-size: 120px;
-    margin-top: 3em;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    flex-wrap:wrap;
 }
 
-.img__ia {
-    height: 25%;
-    margin-left: 25em;
-    margin-top: 3em;
+.logo__adag{
+    width:120px;
+    height:auto;
 }
-.sobre {
-    color: var(--cor-fonte-secundaria);
-    font-family: var(--fonte-principal);
-    font-size: 35px;
-    text-align: center;
-    margin-top: 2em;
+
+/* PESQUISA */
+
+.texto__barra__pesquisa{
+    width:100%;
+    max-width:700px;
+    height:45px;
+
+    background-color:var(--cinza-principal);
+
+    border:none;
+    border-radius:20px;
+
+    padding:0 20px;
+
+    font-family:var(--fonte-principal);
+    font-size:var(--font-size-principal);
+
+    color:var(--cor-fonte-secundaria);
+
+    outline:none;
 }
+
+.pesquisa__texto{
+    width:100%;
+    border:none;
+    background:none;
+    outline:none;
+
+    font-family:var(--fonte-principal);
+    font-size:var(--font-size-principal);
+
+    color:var(--cor-fonte-secundaria);
+}
+
+/* BOTÕES */
+
+.botao{
+    background-color:var(--cor-fonte-tercearia);
+
+    border:none;
+    border-radius:7px;
+
+    padding:0.7rem 1.2rem;
+
+    font-family:var(--fonte-principal);
+    font-size:var(--font-size-principal);
+
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.botao__cadastro,
+.botao__login{
+    margin:0;
+}
+
+/* PAGINA PRINCIPAL */
+
+.pagina__principal{
+    background-image:url(../imagens/carrosel_test.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:2rem;
+
+    text-align:center;
+}
+
+/* TEXTO LIMPEZA */
+
+.texto__tipo__limpeza{
+    color:var(--cor-fonte-secundaria);
+
+    font-size:clamp(2rem, 6vw, 5rem);
+
+    width:100%;
+    max-width:1000px;
+
+    margin-bottom:2rem;
+}
+
+/* LISTA LIMPEZA */
+
+.lista__limpeza{
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:2rem;
+
+    list-style:none;
+}
+
+.tipo__limpeza{
+    margin:0;
+}
+
+/* SOBRE */
+
+.sobre__adag{
+    text-align:center;
+
+    color:var(--cor-fonte-secundaria);
+
+    font-size:clamp(2rem, 6vw, 5rem);
+
+    margin-top:2rem;
+}
+
+.img__ia{
+    width:90%;
+    max-width:500px;
+
+    height:auto;
+
+    display:block;
+
+    margin:3rem auto;
+}
+
+.sobre{
+    color:var(--cor-fonte-secundaria);
+
+    font-size:clamp(1rem, 3vw, 2rem);
+
+    text-align:center;
+
+    width:90%;
+    max-width:1200px;
+
+    margin:2rem auto;
+}
+
+/* ICONES SUPERIOR */
+
 .lista__barra__superior{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-left: 3em;
-    margin-top: 1em;
-    height: 4em;
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+    list-style:none;
+
+    margin-top:1rem;
 }
+
 .icones__superior{
-    margin-left: 1em;
+    margin:0;
 }
-.titulo__mais__comprados {
-    font-family: var(--fonte-principal);
-    color: var(--cor-fonte-primaria);
-    font-size: 40px;
-    padding-left: 3em;
-    padding-top: -5em;
+
+/* MAIS COMPRADOS */
+
+.titulo__mais__comprados{
+    color:var(--cor-fonte-primaria);
+
+    font-size:clamp(1.8rem, 4vw, 3rem);
+
+    text-align:center;
+
+    margin-top:3rem;
 }
+
 .lista__mais__comprados{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding-top:  -10em;
-    align-items: center;
-     
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:2rem;
+
+    list-style:none;
+
+    margin-top:2rem;
 }
-.produtos__mais__comprados {
-    margin-left: 1em;
-    width: 5px;
-    
+
+.produtos__mais__comprados{
+    width:100%;
+    max-width:220px;
 }
-.fundo__tipo__limpeza {
-    padding-top: 3em;
+
+.fundo__tipo__limpeza{
+    padding-top:3rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    .pagina{
+        grid-template-columns:1fr;
+    }
+
+    .cabecalho{
+        flex-direction:column;
+    }
+
+    .texto__barra__pesquisa{
+        width:100%;
+    }
+
+    .lista__limpeza{
+        flex-direction:column;
+    }
+
+    .lista__mais__comprados{
+        flex-direction:column;
+    }
+
 }
