@@ -12,19 +12,6 @@
     --cinza-principal:#B3C4D8;
 }
 
-/* RESET */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-    width:100%;
-    overflow-x:hidden;
-}
 
 body{
     background-color:var(--cor-fundo);
@@ -66,38 +53,27 @@ body{
 
 .texto__barra__pesquisa{
     margin-left:15em;
-
     background-color:var(--cinza-principal);
-
     border-radius:20px;
     border:none;
-
     width:45em;
     height:2.5em;
-
     padding-left:15px;
     padding-right:15px;
-
     color:var(--cor-fonte-secundaria);
-
     font-family:var(--fonte-principal);
     font-size:var(--font-size-principal);
-
     outline:none;
-
     max-width:100%;
 }
 
 .pesquisa__texto{
     font-family:var(--fonte-principal);
     font-size:var(--font-size-principal);
-
     background:none;
     border:none;
     outline:none;
-
     width:32em;
-
     color:var(--cor-fonte-secundaria);
 }
 
@@ -105,17 +81,12 @@ body{
 
 .botao{
     background-color:var(--cor-fonte-tercearia);
-
     font-family:var(--fonte-principal);
     font-size:var(--font-size-principal);
-
     border-radius:7px;
     border:none;
-
     width:7em;
-
     padding:0.5em;
-
     text-decoration:none;
     cursor:pointer;
 }
@@ -134,141 +105,50 @@ body{
 
 .pagina__principal{
     background-image:url(../imagens/carrosel_test.png);
-
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-
     min-height:100vh;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:2rem;
 }
 
-/* LISTA LIMPEZA */
 
-.lista__limpeza{
+
+/*TIPO LIMPEZA */
+
+.pagina__tipo__limpeza{
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
-    flex-wrap:wrap;
-
-    gap:5em;
-
-    list-style:none;
-
-    margin-top:30em;
-}
-
-.tipo__limpeza{
-    margin:0;
-}
-
-/* TEXTO LIMPEZA */
-
-.texto__tipo__limpeza{
-    font-family:var(--fonte-principal);
-
-    color:var(--cor-fonte-secundaria);
-
-    font-size:100px;
-
-    width:100%;
-    max-width:50em;
-
-    margin:1em auto;
-}
-
-/* SOBRE */
-
-.sobre__adag{
-    text-align:center;
-
-    color:var(--cor-fonte-secundaria);
-
-    font-family:var(--fonte-principal);
-
-    font-size:120px;
-
-    margin-top:3em;
-}
-
-.img__ia{
-    height:25%;
-
-    display:block;
-
-    margin:3em auto;
-}
-
-.sobre{
-    color:var(--cor-fonte-secundaria);
-
-    font-family:var(--fonte-principal);
-
-    font-size:35px;
-
-    text-align:center;
-
-    margin-top:2em;
-
-    padding:0 1rem;
-}
-
-/* BARRA SUPERIOR ICONES */
-
-.lista__barra__superior{
-    display:flex;
-
     justify-content:center;
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    list-style:none;
-
-    margin-left:3em;
-    margin-top:1em;
-
-    height:4em;
-
-    gap:1em;
-}
-
-.icones__superior{
-    margin:0;
+    text-align:center;
+    padding:4rem 2rem;
+    position:relative;
+    background-image: url(../imagens/fundo\ tipo\ de\ limpeza.png);
 }
 
 /* MAIS COMPRADOS */
 
 .titulo__mais__comprados{
     font-family:var(--fonte-principal);
-
     color:var(--cor-fonte-primaria);
-
     font-size:40px;
-
-    padding-left:3em;
+    padding-left:2em;
+    padding-top: 2em;
 }
 
 .lista__mais__comprados{
     display:flex;
-
     justify-content:center;
     align-items:center;
-
     flex-wrap:wrap;
-
     gap:2em;
-
     list-style:none;
-
     margin-top:2em;
 }
 
@@ -278,6 +158,90 @@ body{
 
 .fundo__tipo__limpeza{
     padding-top:3em;
+}
+/* TEXTO TIPO LIMPEZA */
+
+.texto__tipo__limpeza{
+    font-size:100px;
+    color:var(--cor-fonte-secundaria);
+    margin-top:-5rem;
+    margin-bottom:3rem;
+    z-index:2;
+}
+
+/* LISTA */
+
+.lista__limpeza{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:4rem;
+    list-style:none;
+    margin-top:2rem;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .texto__tipo__limpeza{
+        font-size:45px;
+        margin-top:2rem;
+    }
+
+    .lista__limpeza{
+        gap:2rem;
+    }
+
+    .tipo__limpeza img{
+        width:130px;
+    }
+
+}
+
+/* SOBRE */
+
+.sobre__adag{
+    text-align:center;
+    color:var(--cor-fonte-secundaria);
+    font-family:var(--fonte-principal);
+    font-size:120px;
+    margin-top: 1em;
+}
+
+.img__ia{
+    height:25%;
+    display:block;
+    margin:3em auto;
+}
+
+.sobre{
+    color:var(--cor-fonte-secundaria);
+    font-family:var(--fonte-principal);
+    font-size:35px;
+    text-align:center;
+    margin-top:2em;
+    padding:0 1rem;
+}
+
+/* BARRA SUPERIOR ICONES */
+
+.lista__barra__superior{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    list-style:none;
+    margin-left:3em;
+    margin-top:1em;
+    height:4em;
+    gap:1em;
+}
+
+.icones__superior{
+    margin:0;
 }
 
 /* RESPONSIVIDADE */
