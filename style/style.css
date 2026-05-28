@@ -115,6 +115,14 @@ body{
     width: 35px;
     height: 35px;
 }
+.perfil:hover,
+.carrinho:hover{
+    transform: scale(1.1);
+}
+.carrossel{
+    background-image: url(../src/carrosel_test.png);
+    align-items: center;
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
