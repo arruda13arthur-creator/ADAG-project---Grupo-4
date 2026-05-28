@@ -37,7 +37,7 @@ body{
 .pagina{
     min-height:100vh;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:50% 50%;
 }
 
 /* BARRA SUPERIOR */
@@ -45,52 +45,58 @@ body{
 .barra__superior{
     background-color:var(--cor-principal);
     width:100%;
-    padding:1rem 2rem;
 }
 
 .cabecalho{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:1rem;
     flex-wrap:wrap;
+    padding:1rem;
 }
 
+/* LOGO */
+
 .logo__adag{
-    width:120px;
+    width:7em;
     height:auto;
+    margin:0 1em 0 3em;
 }
 
 /* PESQUISA */
 
 .texto__barra__pesquisa{
-    width:100%;
-    max-width:700px;
-    height:45px;
+    margin-left:15em;
 
     background-color:var(--cinza-principal);
 
-    border:none;
     border-radius:20px;
+    border:none;
 
-    padding:0 20px;
+    width:45em;
+    height:2.5em;
 
-    font-family:var(--fonte-principal);
-    font-size:var(--font-size-principal);
+    padding-left:15px;
+    padding-right:15px;
 
     color:var(--cor-fonte-secundaria);
 
+    font-family:var(--fonte-principal);
+    font-size:var(--font-size-principal);
+
     outline:none;
+
+    max-width:100%;
 }
 
 .pesquisa__texto{
-    width:100%;
-    border:none;
-    background:none;
-    outline:none;
-
     font-family:var(--fonte-principal);
     font-size:var(--font-size-principal);
+
+    background:none;
+    border:none;
+    outline:none;
+
+    width:32em;
 
     color:var(--cor-fonte-secundaria);
 }
@@ -100,71 +106,83 @@ body{
 .botao{
     background-color:var(--cor-fonte-tercearia);
 
-    border:none;
-    border-radius:7px;
-
-    padding:0.7rem 1.2rem;
-
     font-family:var(--fonte-principal);
     font-size:var(--font-size-principal);
+
+    border-radius:7px;
+    border:none;
+
+    width:7em;
+
+    padding:0.5em;
 
     text-decoration:none;
     cursor:pointer;
 }
 
-.botao__cadastro,
+.botao__cadastro{
+    margin-left:20em;
+    padding-left:1em;
+}
+
 .botao__login{
-    margin:0;
+    padding-left:1em;
+    width:4em;
 }
 
 /* PAGINA PRINCIPAL */
 
 .pagina__principal{
     background-image:url(../imagens/carrosel_test.png);
+
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+
+    min-height:100vh;
 
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 
-    padding:2rem;
-
     text-align:center;
-}
 
-/* TEXTO LIMPEZA */
-
-.texto__tipo__limpeza{
-    color:var(--cor-fonte-secundaria);
-
-    font-size:clamp(2rem, 6vw, 5rem);
-
-    width:100%;
-    max-width:1000px;
-
-    margin-bottom:2rem;
+    padding:2rem;
 }
 
 /* LISTA LIMPEZA */
 
 .lista__limpeza{
     display:flex;
-
     justify-content:center;
     align-items:center;
-
     flex-wrap:wrap;
 
-    gap:2rem;
+    gap:5em;
 
     list-style:none;
+
+    margin-top:30em;
 }
 
 .tipo__limpeza{
     margin:0;
+}
+
+/* TEXTO LIMPEZA */
+
+.texto__tipo__limpeza{
+    font-family:var(--fonte-principal);
+
+    color:var(--cor-fonte-secundaria);
+
+    font-size:100px;
+
+    width:100%;
+    max-width:50em;
+
+    margin:1em auto;
 }
 
 /* SOBRE */
@@ -174,36 +192,36 @@ body{
 
     color:var(--cor-fonte-secundaria);
 
-    font-size:clamp(2rem, 6vw, 5rem);
+    font-family:var(--fonte-principal);
 
-    margin-top:2rem;
+    font-size:120px;
+
+    margin-top:3em;
 }
 
 .img__ia{
-    width:90%;
-    max-width:500px;
-
-    height:auto;
+    height:25%;
 
     display:block;
 
-    margin:3rem auto;
+    margin:3em auto;
 }
 
 .sobre{
     color:var(--cor-fonte-secundaria);
 
-    font-size:clamp(1rem, 3vw, 2rem);
+    font-family:var(--fonte-principal);
+
+    font-size:35px;
 
     text-align:center;
 
-    width:90%;
-    max-width:1200px;
+    margin-top:2em;
 
-    margin:2rem auto;
+    padding:0 1rem;
 }
 
-/* ICONES SUPERIOR */
+/* BARRA SUPERIOR ICONES */
 
 .lista__barra__superior{
     display:flex;
@@ -213,11 +231,14 @@ body{
 
     flex-wrap:wrap;
 
-    gap:1rem;
-
     list-style:none;
 
-    margin-top:1rem;
+    margin-left:3em;
+    margin-top:1em;
+
+    height:4em;
+
+    gap:1em;
 }
 
 .icones__superior{
@@ -227,13 +248,13 @@ body{
 /* MAIS COMPRADOS */
 
 .titulo__mais__comprados{
+    font-family:var(--fonte-principal);
+
     color:var(--cor-fonte-primaria);
 
-    font-size:clamp(1.8rem, 4vw, 3rem);
+    font-size:40px;
 
-    text-align:center;
-
-    margin-top:3rem;
+    padding-left:3em;
 }
 
 .lista__mais__comprados{
@@ -244,20 +265,19 @@ body{
 
     flex-wrap:wrap;
 
-    gap:2rem;
+    gap:2em;
 
     list-style:none;
 
-    margin-top:2rem;
+    margin-top:2em;
 }
 
 .produtos__mais__comprados{
-    width:100%;
-    max-width:220px;
+    width:220px;
 }
 
 .fundo__tipo__limpeza{
-    padding-top:3rem;
+    padding-top:3em;
 }
 
 /* RESPONSIVIDADE */
@@ -270,18 +290,36 @@ body{
 
     .cabecalho{
         flex-direction:column;
+        justify-content:center;
+    }
+
+    .logo__adag{
+        margin:0 auto;
     }
 
     .texto__barra__pesquisa{
-        width:100%;
+        width:90%;
+        margin:1rem auto;
+    }
+
+    .botao__cadastro{
+        margin-left:0;
+    }
+
+    .texto__tipo__limpeza{
+        font-size:50px;
+    }
+
+    .sobre__adag{
+        font-size:60px;
+    }
+
+    .sobre{
+        font-size:22px;
     }
 
     .lista__limpeza{
-        flex-direction:column;
+        margin-top:5em;
+        gap:2em;
     }
-
-    .lista__mais__comprados{
-        flex-direction:column;
-    }
-
 }
