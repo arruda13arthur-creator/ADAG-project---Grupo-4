@@ -119,9 +119,16 @@ body{
 .carrinho:hover{
     transform: scale(1.1);
 }
+.pagina{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:50% 50%;
+}
 .carrossel{
-    background-image: url(../src/carrosel_test.png);
+    background-image: url(../src/carrossel\ test.png);
     align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 5%;
 }
 @media(max-width: 768px){
     .cabecalho{
