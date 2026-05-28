@@ -130,6 +130,12 @@ body{
     background-repeat: no-repeat;
     margin-top: 5%;
 }
+.passagem-carrossel{
+    display: flex;
+    align-items: center;
+    margin-left: 97%;
+    margin-top: 50%;
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
@@ -166,5 +172,12 @@ body{
     }
     .icones{
         margin: 5px 0 0 300px;
+    }
+    .carrossel{
+        background-image: url(../src/wallpaper\ mobile.png)
+    }
+    .passagem-carrossel{
+        height: 70px;
+        margin-right:;
     }
 }
