@@ -136,45 +136,12 @@ body{
     margin-left: 97%;
     margin-top: 50%;
 }
-.ajuste{
-    color: #fff;
-    background-color: #C5207E;
+.mais-{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
-.ajuste img{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    align-items: center;
-}
-.cloro{
-    color: #fff;
-    background-color: #01A8D4;
-    align-items: center;
-    justify-content: center;
-}
-
-.algicida{
-    color: #fff;
-    background-color: #088F43;
-    align-items: center;
-    justify-content: center;
-}
-
-.acessorios{
-    color: #fff;
-    background-color: #DD5E1A;
-    align-items: center;
-    justify-content: center;
-}
-.informacoes{
-    align-items: center;
-}
-
-
-
-
 
 
 
