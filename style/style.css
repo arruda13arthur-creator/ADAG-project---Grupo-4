@@ -130,13 +130,87 @@ body{
     background-repeat: no-repeat;
     margin-top: 5%;
 }
-.passagem-carrossel{
-    display: flex;
-    align-items: center;
-    margin-left: 97%;
-    margin-top: 50%;
+.fundo__tipo__limpeza{
+    padding-top:3em;
+}
+/* TEXTO TIPO LIMPEZA */
+
+.texto__tipo__limpeza{
+    font-size:100px;
+    color:var(--cor-fonte-secundaria);
+    margin-top:-5rem;
+    margin-bottom:3rem;
+    z-index:2;
 }
 
+/* LISTA */
+
+.lista__limpeza{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:4rem;
+    list-style:none;
+    margin-top:2rem;
+}
+/*TIPO LIMPEZA */
+
+.pagina__tipo__limpeza{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:4rem 2rem;
+    position:relative;
+    background-image: url(../src/fundo\ tipo\ de\ limpeza.png);
+}
+/* MAIS COMPRADOS */
+
+.titulo__mais__comprados{
+    font-family:var(--fonte-principal);
+    color:var(--cor-fonte-primaria);
+    font-size:40px;
+    padding-left:2em;
+    padding-top: 2em;
+}
+
+.lista__mais__comprados{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2em;
+    list-style:none;
+    margin-top:2em;
+}
+
+.produtos__mais__comprados{
+    width:220px;
+}
+.sobre__adag{
+    text-align:center;
+    color:var(--cor-fonte-secundaria);
+    font-family:var(--fonte-principal);
+    font-size:120px;
+    margin-top: 1em;
+}
+
+.img__ia{
+    height:25%;
+    display:block;
+    margin:3em auto;
+}
+
+.sobre{
+    color:var(--cor-fonte-secundaria);
+    font-family:var(--fonte-principal);
+    font-size:35px;
+    text-align:center;
+    margin-top:2em;
+    padding:0 1rem;
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
