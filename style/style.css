@@ -142,98 +142,27 @@ body{
     align-items: center;
     gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* TEXTO TIPO LIMPEZA */
+
+.texto__tipo__limpeza{
+    font-size:100px;
+    color:var(--cor-fonte-secundaria);
+    margin-top:-5rem;
+    margin-bottom:3rem;
+    z-index:2;
+}
+
+/* LISTA */
+
+.lista__limpeza{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:4rem;
+    list-style:none;
+    margin-top:2rem;
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
