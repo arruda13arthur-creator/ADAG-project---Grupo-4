@@ -211,6 +211,30 @@ body{
     margin-top:2em;
     padding:0 1rem;
 }
+
+/*liSTA DOS PRODUTOS*/
+
+.titulo__produtos{
+    display: flex;
+    font-family:var(--fonte-principal);
+    color:var(--cor-fonte-primaria);
+    font-size:40px;
+    margin-top: 100px;
+    padding-left:1em;
+    padding-top: 1em;
+    justify-content: center;
+}
+.lista__produtos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap: 35px;
+    list-style:none;
+    margin-top:2em;
+}
+.lista__produtos{
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
