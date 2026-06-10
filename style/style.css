@@ -233,8 +233,6 @@ body{
     list-style:none;
     margin-top:2em;
 }
-.lista__produtos{
-}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
@@ -500,9 +498,6 @@ input {
 
 .google img {
   height: 18px;
-}
-.login-pagina{
-  
 }
 @media (max-width: 400px) {
   .card {
