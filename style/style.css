@@ -501,7 +501,9 @@ input {
 .google img {
   height: 18px;
 }
-
+.login-pagina{
+  
+}
 @media (max-width: 400px) {
   .card {
     width: 90%;
