@@ -235,6 +235,12 @@ body{
     list-style:none;
     margin-top:2em;
 }
+.lista__produtos img{
+  border-radius: 20px;
+}
+.lista__produtos li:hover{
+  transform: translateY(-5px);
+}
 @media(max-width: 768px){
     .cabecalho{
         flex-direction: column;
