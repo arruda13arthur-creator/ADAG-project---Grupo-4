@@ -155,7 +155,12 @@ body{
     gap:4rem;
     list-style:none;
     margin-top:2rem;
+    transition: 0.3s;
 }
+.lista__limpeza img{
+    border-radius: 20px;
+}
+
 /*TIPO LIMPEZA */
 
 .pagina__tipo__limpeza{
@@ -238,8 +243,13 @@ body{
 .lista__produtos img{
   border-radius: 20px;
 }
-.lista__produtos li:hover{
+.lista__produtos li:hover,
+.lista__mais__comprados li:hover{
   transform: translateY(-5px);
+}
+.lista__limpeza li:hover{
+  transform: 0.3s;
+  transform: scale(1.05);
 }
 @media(max-width: 768px){
     .cabecalho{
