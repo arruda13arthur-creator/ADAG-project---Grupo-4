@@ -205,9 +205,14 @@ body{
 }
 
 .img__ia{
-    height:25%;
+    width: 57%;
+    height: auto;
     display:block;
     margin:3em auto;
+
+}
+.img__ia img{
+  border-radius: 20px;
 }
 
 .sobre{
