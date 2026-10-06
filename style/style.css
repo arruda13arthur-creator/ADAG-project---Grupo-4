@@ -530,16 +530,14 @@ input {
 
 
 
-/* Container do Carrossel - Define o tamanho padrão do banner */
 .carousel-container {
     position: relative;
     width: 100vw;
-    height: 830px; /* Altura ideal baseada na proporção da sua imagem desktop */
+    height: 830px; 
     overflow: hidden;
-    background-color: #000; /* Fundo escuro para transição suave se a imagem demorar a carregar */
+    background-color: #000;
 }
 
-/* Configuração dos Slides */
 .carousel-slide {
     position: absolute;
     top: 0;
@@ -547,17 +545,17 @@ input {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out; /* Efeito de transição suave (fade) */
+    transition: opacity 0.8s ease-in-out; 
     z-index: 1;
 }
 
-/* Classe aplicada via Javascript para exibir o slide ativo */
+
 .carousel-slide.active {
     opacity: 1;
     z-index: 2;
 }
 
-/* Garante que a imagem preencha o tamanho sem esticar ou achatar */
+
 .carousel-slide img {
     width: 100%;
     height: 100%;
@@ -565,7 +563,7 @@ input {
     object-position: center;
 }
 
-/* Estilo dos Botões de Próximo e Anterior */
+
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -595,7 +593,7 @@ input {
     left: 0;
 }
 
-/* Indicadores (Bolinhas inferiores) */
+
 .carousel-dots {
     position: absolute;
     bottom: 20px;
@@ -617,13 +615,13 @@ input {
 
 .dot.active, .dot:hover {
     background-color: #ffffff;
-    transform: scale(1.2); /* Deixa a bolinha ativa ligeiramente maior */
+    transform: scale(1.2); 
 }
 
-/* Responsividade para telas menores (Celulares) */
+
 @media (max-width: 768px) {
     .carousel-container {
-        height: 300px; /* Reduz a altura em telas menores para manter o enquadramento */
+        height: 300px; 
     }
     
     .carousel-btn {

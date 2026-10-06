@@ -41,10 +41,10 @@
         </header>
 
         <section class="pagina carrossel">
-             <!-- Container Principal do Carrossel -->
+            
     <div class="carousel-container">
         
-        <!-- Slides -->
+        
         <div class="carousel-slide active">
             <img src="./src/carrossel test.png" alt="Conheça as soluções ADAG">
         </div>
@@ -57,11 +57,11 @@
             <img src="./src/image_8945581a.jpg" alt="O melhor custo-benefício">
         </div>
 
-        <!-- Botões de Navegação (Setas) -->
+        
         <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
 
-        <!-- Indicadores (Bolinhas) -->
+        
         <div class="carousel-dots">
             <span class="dot active" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -69,7 +69,7 @@
         </div>
     </div>
 
-    <!-- Script Simples para o Funcionamento -->
+    
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll('.carousel-slide');
@@ -94,7 +94,7 @@
             showSlide(slideIndex = index);
         }
 
-        // Opcional: Carrossel Automático a cada 5 segundos
+        
         setInterval(() => {
             moveSlide(1);
         }, 5000);
