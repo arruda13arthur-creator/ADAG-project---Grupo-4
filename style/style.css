@@ -527,3 +527,49 @@ input {
     width: 90%;
   }
 }
+
+.compras img{
+  margin-top: 220px;
+  margin-left: 200px;
+  border-radius: 15px;
+}
+
+.compra_geral{
+  margin-left: 150px;
+}
+
+.layout {
+  margin-left: 1000px;
+  font-size: 20px;
+  transform: translateY(-550px);
+  background-color: var(--cinza-principal);
+  width: 600px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.layout h1{
+  transform: translateY(-15px);
+  align-items: center;
+  margin-left: 110px;
+  padding: 30px 0 0 0;
+}
+
+.layout span{
+  margin-left: 190px;
+  margin-top: 200px;
+  border-radius: 10px;
+  padding: 3px 50px 3px 50px;
+  background-color: #E0FFE7;
+  color: #008000;
+}
+
+.layout p{
+  font-size: 30px;
+  margin-left: 140px;
+  transform: translateY(15px);
+  align-items: center;
+  background-color: #FFBF00;
+  width: 320px;
+  border-radius: 15px;
+}
