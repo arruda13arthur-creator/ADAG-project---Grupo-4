@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/perfil.css">
+    <title>Perfil ADAG</title>
+</head>
+<body>
+    <div class="profile-container">
+  
+        <!-- Painel Esquerdo: Cartão Principal do Usuário -->
+        <aside class="profile-sidebar">
+          <div class="avatar-wrapper">
+            <img id="user-photo" src="https://placeholder.com" alt="Foto do Proprietário">
+          </div>
+          <h1 id="user-name">Carregando Nome...</h1>
+          <p id="user-email">usuario@email.com</p>
+          <span class="role-badge">Proprietário de Piscina 🏠</span>
+          
+          <button class="btn-logout" onclick="logout()">Sair da Conta</button>
+        </aside>
+      
+        <!-- Painel Direito: Informações Pessoais e Configurações -->
+        <main class="profile-content">
+          <section class="info-section">
+            <h2>Informações Pessoais</h2>
+            <div class="info-grid">
+              <div class="form-group">
+                <label>Telefone / WhatsApp</label>
+                <input type="text" placeholder="(11) 99999-9999">
+              </div>
+              <div class="form-group">
+                <label>Cidade / Estado</label>
+                <input type="text" placeholder="São Paulo - SP">
+              </div>
+              <div class="form-group">
+                <label>Tipo de Residência</label>
+                <select>
+                  <option>Casa Residencial</option>
+                  <option>Chácara / Sítio</option>
+                  <option>Condomínio</option>
+                  <option>Comercial / Clube</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Membro desde</label>
+                <input type="text" value="Outubro de 2026" disabled class="disabled-input">
+              </div>
+            </div>
+          </section>
+      
+          <section class="info-section">
+            <h2>Sobre Mim / Notas do Dono</h2>
+            <textarea placeholder="Escreva aqui observações sobre sua rotina, horários de manutenção ou detalhes que queira lembrar sobre o seu espaço de lazer..."></textarea>
+            <button class="btn-save">Salvar Alterações</button>
+          </section>
+        </main>
+      
+      </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>
