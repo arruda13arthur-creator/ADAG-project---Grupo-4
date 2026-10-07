@@ -16,7 +16,7 @@ html{
 }
 body{
     font-family: var(--fonte-principal);
-    background-color: var(--cor-fundo);
+    background-color: var(---fundo);
     color: var(--cor-fonte-primaria);
 
 /*Cabeçalho*/
@@ -528,8 +528,12 @@ input {
   }
 }
 
+.pagina_compra{
+  background-color: var(--cor-fundo);
+}
+
 .compras img{
-  margin-top: 220px;
+  margin-top: 210px;
   margin-left: 200px;
   border-radius: 15px;
 }
@@ -541,7 +545,7 @@ input {
 .layout {
   margin-left: 1000px;
   font-size: 20px;
-  transform: translateY(-550px);
+  transform: translateY(-530px);
   background-color: var(--cinza-principal);
   width: 600px;
   height: 500px;
