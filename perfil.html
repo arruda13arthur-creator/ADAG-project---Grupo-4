@@ -1,65 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/perfil.css">
-    <title>Perfil ADAG</title>
+    <title>Minha Conta | Central do Cliente</title>
+    <!-- Vinculando o arquivo CSS externo -->
+
 </head>
 <body>
-    <div class="profile-container">
-  
-        <!-- Painel Esquerdo: Cartão Principal do Usuário -->
-        <aside class="profile-sidebar">
-          <div class="avatar-wrapper">
-            <img id="user-photo" src="https://placeholder.com" alt="Foto do Proprietário">
-          </div>
-          <h1 id="user-name">Carregando Nome...</h1>
-          <p id="user-email">usuario@email.com</p>
-          <span class="role-badge">Proprietário de Piscina 🏠</span>
-          
-          <button class="btn-logout" onclick="logout()">Sair da Conta</button>
-        </aside>
-      
-        <!-- Painel Direito: Informações Pessoais e Configurações -->
-        <main class="profile-content">
-          <section class="info-section">
-            <h2>Informações Pessoais</h2>
-            <div class="info-grid">
-              <div class="form-group">
-                <label>Telefone / WhatsApp</label>
-                <input type="text" placeholder="(11) 99999-9999">
-              </div>
-              <div class="form-group">
-                <label>Cidade / Estado</label>
-                <input type="text" placeholder="São Paulo - SP">
-              </div>
-              <div class="form-group">
-                <label>Tipo de Residência</label>
-                <select>
-                  <option>Casa Residencial</option>
-                  <option>Chácara / Sítio</option>
-                  <option>Condomínio</option>
-                  <option>Comercial / Clube</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Membro desde</label>
-                <input type="text" value="Outubro de 2026" disabled class="disabled-input">
-              </div>
-            </div>
-          </section>
-      
-          <section class="info-section">
-            <h2>Sobre Mim / Notas do Dono</h2>
-            <textarea placeholder="Escreva aqui observações sobre sua rotina, horários de manutenção ou detalhes que queira lembrar sobre o seu espaço de lazer..."></textarea>
-            <button class="btn-save">Salvar Alterações</button>
-          </section>
-        </main>
-      
-      </div>
 
-      <script src="./script.js"></script>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="./index.html" class=""><img src="./src/logo_ADAG.png" alt="ADAGlogo"></a>
+        </div>
+        <input type="text" placeholder="Clique para pesquiasar..." class="pesquisa">
+        
+        <div class="icones">
+            <a href="#" class="perfil" ><img src="./src/perfil.png" alt="perfil"></a>
+            <a href="#" class="carrinho"><img src="./src/carrinho.png" alt="carrinho"></a>
+        </div>
+
+        <nav class="listatopo">
+            <ul>
+                <div class="botoes-superiores">
+                    <div class="login">
+                        <li><a href="./login.html">Login</a></li>
+                    </div> 
+                    <div class="cadastrese">  
+                        <li><a href="./cadastro.html">Cadastro</a></li>
+                    </div>
+                </div>    
+            </ul>
+            <ul class="lista-menu">
+                <li><a href="./ajuste.html">Ajuste</a></li>
+                <li><a href="./cloro.html">Cloro</a></li>
+                <li><a href="./algicida.html">Algicida</a></li>
+                <li><a href="./acessorios.html">Acessorios</a></li>
+            </ul>
+        </nav>
+
+        </header>
+
+    <div class="main-wrapper">
+        <div class="breadcrumb" id="breadcrumb">Minha Conta</div>
+        
+        <!-- Tela Principal: Menu de Mosaico -->
+        <div id="mainDashboard">
+            <h1 class="page-title">Minha Conta</h1>
+            
+            <div class="dashboard-grid">
+                <!-- Card 1: Pedidos -->
+                <div class="account-card" onclick="openSection('sectionPedidos', 'Seus pedidos')">
+                    <div class="card-icon">📦</div>
+                    <div class="card-info">
+                        <h3>Seus pedidos</h3>
+                        <p>Rastrear, devolver ou comprar produtos de piscina novamente</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Endereços -->
+                <div class="account-card" onclick="openSection('sectionEnderecos', 'Seus endereços')">
+                    <div class="card-icon">📍</div>
+                    <div class="card-info">
+                        <h3>Endereços</h3>
+                        <p>Gerenciar ou adicionar locais de entrega para seus produtos</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Segurança/Dados -->
+                <div class="account-card" onclick="openSection('sectionDados', 'Acesso e segurança')">
+                    <div class="card-icon">🔒</div>
+                    <div class="card-info">
+                        <h3>Acesso e segurança</h3>
+                        <p>Editar nome, e-mail, telefone e senha de acesso</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Pagamentos -->
+                <div class="account-card" onclick="openSection('sectionPagamentos', 'Seus pagamentos')">
+                    <div class="card-icon">💳</div>
+                    <div class="card-info">
+                        <h3>Carteira e pagamentos</h3>
+                        <p>Gerenciar cartões de crédito, chaves Pix e dados de faturamento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Oculta: Seus Pedidos -->
+        <div id="sectionPedidos" class="details-section">
+            <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
+            <h1 class="page-title">Seus pedidos</h1>
+            
+            <div class="order-item">
+                <div class="order-header">
+                    <div><strong>Pedido feito em:</strong> 02/10/2026</div>
+                    <div><strong>Total:</strong> R$ 249,90</div>
+                    <div><strong>Número do pedido:</strong> #1042</div>
+                </div>
+                <div class="order-body">
+                    <div>
+                        <h4>Cloro Estabilizado Genco 10kg</h4>
+                        <p style="color: var(--text-gray); font-size: 14px; margin-top: 5px;">Vendido por ADAG</p>
+                    </div>
+                    <div class="order-status">A caminho — Entrega estimada para amanhã</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Oculta: Endereços -->
+        <div id="sectionEnderecos" class="details-section">
+            <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
+            <h1 class="page-title">Seus endereços</h1>
+            <form onsubmit="event.preventDefault(); alert('Endereço atualizado!');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>CEP</label>
+                        <input type="text" value="01310-100">
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço</label>
+                        <input type="text" value="Avenida Paulista">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Número</label>
+                        <input type="text" value="1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Cidade / UF</label>
+                        <input type="text" value="São Paulo - SP">
+                    </div>
+                </div>
+                <button type="submit" class="btn-action">Salvar endereço</button>
+            </form>
+        </div>
+
+        <!-- Seção Oculta: Dados e Segurança -->
+        <div id="sectionDados" class="details-section">
+            <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
+            <h1 class="page-title">Dados de acesso e segurança</h1>
+            <form onsubmit="event.preventDefault(); alert('Dados alterados com sucesso!');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome completo</label>
+                        <input type="text" value="Silva Sauro">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" value="silva.sauro@email.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nova senha</label>
+                        <input type="password" placeholder="Mínimo 6 caracteres">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmar senha</label>
+                        <input type="password">
+                    </div>
+                </div>
+                <button type="submit" class="btn-action">Salvar alterações</button>
+            </form>
+        </div>
+
+        <!-- Seção Oculta: Pagamentos -->
+        <div id="sectionPagamentos" class="details-section">
+            <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
+            <h1 class="page-title">Formas de pagamento salvas</h1>
+            <p style="color: var(--text-gray); margin-bottom: 20px;">Você possui 1 cartão de crédito vinculado à sua conta de compras.</p>
+            <div style="border: 1px solid var(--border-light); padding: 20px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; max-width: 500px;">
+                <div>
+                    <strong>Visa terminado em 4321</strong>
+                    <p style="font-size: 14px; color: var(--text-gray); margin-top: 4px;">Expira em: 12/2030</p>
+                </div>
+                <button style="color: red; border: none; background: none; cursor: pointer;">Remover</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vinculando o arquivo JavaScript externo -->
+    <script src="script.js"></script>
 </body>
 </html>
