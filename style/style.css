@@ -565,14 +565,70 @@ input {
 }
 
 .layout p{
-  font-size: 30px;
-  margin-left: 140px;
-  transform: translateY(15px);
-  align-items: center;
-  background-color: #FFBF00;
-  width: 320px;
-  border-radius: 15px;
+  font-size: 45px;
+  margin-left: 80px;
+  margin-top: 50px;
 }
+
+.botao_comprar a,
+.botao_adicionar a{
+  text-decoration: none;
+  color: var(--cor-fonte-primaria);
+}
+
+.botao_adicionar{
+  margin-top: -45px;
+  margin-left: 330px;
+}
+
+.botao_comprar{
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.botao_adicionar,
+.botao_comprar{
+  text-align: center;
+  background-color: var(--cor-secundaria);
+  width: 250px;
+  border-radius: 15px;
+  padding: 10px 0 10px 0;
+}
+
+.botao_adicionar:hover a,
+.botao_comprar:hover a{
+  color: var(--cor-fonte-secundaria)
+}
+
+.botao_adicionar:hover,
+.botao_comprar:hover{
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .carousel-container {
