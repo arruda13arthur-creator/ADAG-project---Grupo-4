@@ -42,6 +42,63 @@
 
         <section class="pagina carrossel">
             
+    <div class="carousel-container">
+        
+        
+        <div class="carousel-slide active">
+            <img src="./src/carrossel test.png" alt="Conheça as soluções ADAG">
+        </div>
+        
+        <div class="carousel-slide">
+            <img src="./src/image_974e403a.jpg" alt="Soluções para sua piscina">
+        </div>
+        
+        <div class="carousel-slide">
+            <img src="./src/image_8945581a.jpg" alt="O melhor custo-benefício">
+        </div>
+
+        
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+        
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            if (index >= slides.length) slideIndex = 0;
+            if (index < 0) slideIndex = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+        }
+
+        function moveSlide(step) {
+            showSlide(slideIndex += step);
+        }
+
+        function currentSlide(index) {
+            showSlide(slideIndex = index);
+        }
+
+        
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
         </section>
 
         <section class="mais__comprados">
