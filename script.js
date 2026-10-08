@@ -1,7 +1,7 @@
 /**
- * Abre uma seção de detalhes específica escondendo a dashboard principal
- * @param {string} sectionId - ID do elemento HTML da seção
- * @param {string} sectionName - Nome que aparecerá no breadcrumb
+ 
+ * @param {string} sectionId - 
+ * @param {string} sectionName - 
  */
 function openSection(sectionId, sectionName) {
     document.getElementById('mainDashboard').style.display = 'none';
@@ -13,9 +13,9 @@ function openSection(sectionId, sectionName) {
     document.getElementById('breadcrumb').innerText = 'Minha conta > ' + sectionName;
 }
  
-/**
+
  
- */
+
 function backToDashboard() {
    
     const sections = document.querySelectorAll('.details-section');
