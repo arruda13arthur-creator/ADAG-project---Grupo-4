@@ -556,7 +556,7 @@ input {
 }
 
 .titulo_produto{
-  white-space: nowrap; /*faz o texto se manter em uma unica linha*/
+   /*faz o texto se manter em uma unica linha*/
   margin-top: 20px;
   font-size: 25px;
 }
