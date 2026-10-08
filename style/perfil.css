@@ -134,14 +134,14 @@ body{
   margin: 0 auto;
 }
 
-/* CONTAINER PRINCIPAL CENTRALIZADO COM ESPAÇAMENTO DO CABEÇALHO */
+
 .perfil-wrapper {
   max-width: 820px;
-  /* margin-top de 80px afasta o perfil para não ficar atrás do seu cabeçalho */
+ 
   margin: 80px auto 40px auto; 
 }
 
-/* BARRA SUPERIOR PARA VOLTAR À LOJA */
+
 .top-bar {
   margin-bottom: 20px;
 }
@@ -168,7 +168,7 @@ body{
   border-color: var(--primary);
 }
 
-/* GRID DOS 4 CARDS CLICÁVEIS */
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -217,7 +217,7 @@ body{
   color: var(--primary);
 }
 
-/* ÁREA DO PAINEL DE DETALHES */
+
 .detail-container {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -248,7 +248,7 @@ body{
   padding-bottom: 10px;
 }
 
-/* COMPONENTES INTERNOS */
+
 .btn-primary {
   background-color: var(--primary);
   color: white;
@@ -283,7 +283,7 @@ body{
   cursor: pointer;
 }
 
-/* PEDIDOS */
+
 .order-box {
   background-color: #f8fafc;
   border: 1px solid var(--border);
@@ -324,7 +324,7 @@ body{
   gap: 6px;
 }
 
-/* BADGES */
+
 .badge {
   font-size: 0.75rem;
   padding: 3px 8px;
@@ -342,7 +342,7 @@ body{
   color: #15803d;
 }
 
-/* FORMULÁRIOS */
+
 .simple-form {
   display: flex;
   flex-direction: column;
@@ -381,7 +381,7 @@ body{
 .flex-1 { flex: 1; }
 .flex-2 { flex: 2; }
 
-/* ENDEREÇO & PAGAMENTO */
+
 .address-box {
   background-color: #f8fafc;
   border: 1px solid var(--border);
@@ -426,7 +426,7 @@ body{
   font-size: 1.3rem;
 }
 
-/* TOAST */
+
 .toast {
   position: fixed;
   top: 20px;
@@ -440,7 +440,7 @@ body{
   z-index: 9999;
 }
 
-/* CLASSE UTILITÁRIA PARA ESCONDER ELEMENTOS */
+
 .hidden {
   display: none !important;
 }
