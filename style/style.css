@@ -16,7 +16,7 @@ html{
 }
 body{
     font-family: var(--fonte-principal);
-    background-color: var(--cor-fundo);
+    background-color: var(---fundo);
     color: var(--cor-fonte-primaria);
 
 /*Cabeçalho*/
@@ -528,51 +528,147 @@ input {
   }
 }
 
-.compras img{
-  margin-top: 220px;
-  margin-left: 200px;
+.pagina_compra{
+  background-color: var(--cor-fundo);
+}
+
+.compras{
+  background-color: #DCDCDC;
+  display: flex;
+  text-align: center;
+  margin-top: 150px;
+  padding: 50px 810px;
+  margin-left: 150px;
+  height: 850px;
   border-radius: 15px;
 }
 
-.compra_geral{
+.compras img{
+  width: 600px;
+  max-height: 650px;
+  margin-left: -650px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.informacoes{
   margin-left: 150px;
 }
 
-.layout {
-  margin-left: 1000px;
-  font-size: 20px;
-  transform: translateY(-550px);
-  background-color: var(--cinza-principal);
-  width: 600px;
-  height: 500px;
-  border-radius: 15px;
+.titulo_produto{
+   /*faz o texto se manter em uma unica linha*/
+  margin-top: 20px;
+  font-size: 25px;
 }
 
-.layout h1{
-  transform: translateY(-15px);
-  align-items: center;
-  margin-left: 110px;
-  padding: 30px 0 0 0;
-}
-
-.layout span{
-  margin-left: 190px;
-  margin-top: 200px;
+.frete {
+  color: #2E8B57;
+  margin-top: 10px;
+  background-color: #E0FFFF;
+  max-width: 200px;
+  padding: 3px 0 3px;
+  margin-left: 30px;
   border-radius: 10px;
-  padding: 3px 50px 3px 50px;
-  background-color: #E0FFE7;
-  color: #008000;
 }
 
-.layout p{
-  font-size: 30px;
-  margin-left: 140px;
-  transform: translateY(15px);
-  align-items: center;
-  background-color: #FFBF00;
-  width: 320px;
+.valor{
+  text-align: start;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.detalhes{
+  font-size: 15px;
+  margin-top: 100px;
+  text-align: start;
+}
+
+.detalhes p{
+  margin-top: 15px;
+}
+
+.contador {
+  display: inline-flex; /*para colocar as divs lado a lado*/
+  border-radius: 10px;
+  overflow: hidden;/*vai colocar um limite a div*/
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-right: 150px;
+}
+
+.botao {
+  background-color: #ffcc29;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.numero {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+}
+
+.comprar{
+  margin-left: 50px;
+  background-color: #BEBEBE;
+  padding: 0px 70px;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.nome_loja{
+  margin-top: 15px;
+  border-bottom: 1px solid;/*fazer linha*/
+  padding-bottom: 10px;/*espaço da linha*/
+}
+
+.vendidos{
+  color: var(--cor-fonte-secundaria);
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.botoes_compras{
+  margin-top: 100px;
+}
+
+.botao_adicionar a,
+.botao_comprar a{
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--cor-fonte-secundaria);
+}
+
+.botao_comprar,
+.botao_adicionar{
+  margin-top: 25px;
+  background-color: var(--cor-secundaria);
+  padding: 10px 20px;
   border-radius: 15px;
 }
+
+.botao_comprar:hover,
+.botao_adicionar:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .carousel-container {
