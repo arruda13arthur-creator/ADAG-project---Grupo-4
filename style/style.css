@@ -532,90 +532,106 @@ input {
   background-color: var(--cor-fundo);
 }
 
-.compras img{
-  margin-top: 210px;
-  margin-left: 200px;
+.compras{
+  background-color: #DCDCDC;
+  display: flex;
+  text-align: center;
+  margin-top: 150px;
+  padding: 50px 810px;
+  margin-left: 150px;
+  height: 850px;
   border-radius: 15px;
 }
 
-.compra_geral{
+.compras img{
+  width: 600px;
+  max-height: 650px;
+  margin-left: -650px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.informacoes{
   margin-left: 150px;
 }
 
-.layout {
-  margin-left: 1000px;
-  font-size: 20px;
-  transform: translateY(-530px);
-  background-color: var(--cinza-principal);
-  width: 600px;
-  height: 500px;
-  border-radius: 15px;
+.titulo_produto{
+  white-space: nowrap; /*faz o texto se manter em uma unica linha*/
+  margin-top: 20px;
+  font-size: 25px;
 }
 
-.layout h1{
-  transform: translateY(-15px);
-  align-items: center;
-  margin-left: 110px;
-  padding: 30px 0 0 0;
-}
-
-.layout span{
-  margin-left: 190px;
-  margin-top: 200px;
+.frete {
+  color: #2E8B57;
+  margin-top: 10px;
+  background-color: #E0FFFF;
+  max-width: 200px;
+  padding: 3px 0 3px;
+  margin-left: 30px;
   border-radius: 10px;
-  padding: 3px 50px 3px 50px;
-  background-color: #E0FFE7;
-  color: #008000;
 }
 
-.layout p{
-  font-size: 45px;
-  margin-left: 80px;
-  margin-top: 50px;
+.valor{
+  text-align: start;
+  margin-top: 30px;
+  font-size: 40px;
 }
 
-.botao_comprar a,
-.botao_adicionar a{
-  text-decoration: none;
-  color: var(--cor-fonte-primaria);
-}
-
-.botao_adicionar{
-  margin-top: -45px;
-  margin-left: 330px;
-}
-
-.botao_comprar{
+.detalhes{
+  font-size: 15px;
   margin-top: 100px;
-  margin-left: 10px;
+  text-align: start;
 }
 
-.botao_adicionar,
-.botao_comprar{
-  text-align: center;
-  background-color: var(--cor-secundaria);
-  width: 250px;
-  border-radius: 15px;
-  padding: 10px 0 10px 0;
+.detalhes p{
+  margin-top: 15px;
 }
 
-.botao_adicionar:hover a,
-.botao_comprar:hover a{
-  color: var(--cor-fonte-secundaria)
+.contador {
+  display: inline-flex; /*para colocar as divs lado a lado*/
+  border-radius: 10px;
+  overflow: hidden;/*vai colocar um limite a div*/
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-right: 150px;
 }
 
-.botao_adicionar:hover,
-.botao_comprar:hover{
-  transition: 0.3s;
-  transform: scale(1.05);
+.botao {
+  background-color: #ffcc29;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
+.numero {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+}
 
+.comprar{
+  margin-left: 50px;
+  background-color: #BEBEBE;
+  padding: 0px 70px;
+  border-radius: 10px;
+}
 
+.nome_loja{
+  margin-top: 15px;
+  border-bottom: 1px solid;/*fazer linha*/
+  padding-bottom: 10px;/*espaço da linha*/
+}
 
+.vendidos{
+  color: var(--cor-fonte-secundaria);
+  margin-top: 10px;
+  white-space: nowrap;
+}
 
-
-
+.botoes_compras{
+  margin-top: 100px;
+}
 
 
 
