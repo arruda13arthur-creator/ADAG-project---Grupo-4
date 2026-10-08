@@ -615,6 +615,7 @@ input {
   background-color: #BEBEBE;
   padding: 0px 70px;
   border-radius: 10px;
+  height: 400px;
 }
 
 .nome_loja{
@@ -633,7 +634,26 @@ input {
   margin-top: 100px;
 }
 
+.botao_adicionar a,
+.botao_comprar a{
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--cor-fonte-secundaria);
+}
 
+.botao_comprar,
+.botao_adicionar{
+  margin-top: 25px;
+  background-color: var(--cor-secundaria);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.botao_comprar:hover,
+.botao_adicionar:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 
 
 
