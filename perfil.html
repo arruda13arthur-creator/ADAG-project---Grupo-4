@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/perfil.css">
     <title>Minha Conta | Central do Cliente</title>
-    <!-- Vinculando o arquivo CSS externo -->
+    
 
 </head>
 <body>
@@ -45,12 +45,12 @@
     <div class="main-wrapper">
         <div class="breadcrumb" id="breadcrumb">Minha Conta</div>
         
-        <!-- Tela Principal: Menu de Mosaico -->
+        
         <div id="mainDashboard">
             <h1 class="page-title">Minha Conta</h1>
             
             <div class="dashboard-grid">
-                <!-- Card 1: Pedidos -->
+                
                 <div class="account-card" onclick="openSection('sectionPedidos', 'Seus pedidos')">
                     <div class="card-icon">📦</div>
                     <div class="card-info">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Endereços -->
+            
                 <div class="account-card" onclick="openSection('sectionEnderecos', 'Seus endereços')">
                     <div class="card-icon">📍</div>
                     <div class="card-info">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Segurança/Dados -->
+                
                 <div class="account-card" onclick="openSection('sectionDados', 'Acesso e segurança')">
                     <div class="card-icon">🔒</div>
                     <div class="card-info">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <!-- Card 4: Pagamentos -->
+                
                 <div class="account-card" onclick="openSection('sectionPagamentos', 'Seus pagamentos')">
                     <div class="card-icon">💳</div>
                     <div class="card-info">
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <!-- Seção Oculta: Seus Pedidos -->
+        
         <div id="sectionPedidos" class="details-section">
             <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
             <h1 class="page-title">Seus pedidos</h1>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <!-- Seção Oculta: Endereços -->
+        
         <div id="sectionEnderecos" class="details-section">
             <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
             <h1 class="page-title">Seus endereços</h1>
@@ -138,7 +138,7 @@
             </form>
         </div>
 
-        <!-- Seção Oculta: Dados e Segurança -->
+       
         <div id="sectionDados" class="details-section">
             <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
             <h1 class="page-title">Dados de acesso e segurança</h1>
@@ -167,7 +167,7 @@
             </form>
         </div>
 
-        <!-- Seção Oculta: Pagamentos -->
+        
         <div id="sectionPagamentos" class="details-section">
             <button class="btn-back" onclick="backToDashboard()">← Voltar para a conta</button>
             <h1 class="page-title">Formas de pagamento salvas</h1>
@@ -182,7 +182,7 @@
         </div>
     </div>
 
-    <!-- Vinculando o arquivo JavaScript externo -->
+    
     <script src="script.js"></script>
 </body>
 </html>
